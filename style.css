@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	margin: 30px 0;
+	text-align: center;
+}
+
+.btn-add-book {
+	cursor: pointer;
+	padding: 20px 35px;
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.modal-overlay.modal-visible {
+	display: flex;
+}
+
+.modal {
+	height: 400px;
+	width: 330px;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-title {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+.form-group input[type='text'] {
+	font-family: inherit;
+	font-size: 1rem;
+	min-height: 50px;
+	min-width: 250px;
+	padding: 5px;
+}
+
+.form-group:last-of-type {
+	align-self: flex-start;
+}
+
+.form-group input[type='checkbox'] {
+	vertical-align: middle;
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 20px 80px;
+	border-radius: 10px;
+	border: none;
+	width: 250px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.3rem;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.btn:active {
+	transform: scale(0.96);
+}
+
+.btn-submit {
+	margin-top: 10px;
+	justify-self: center;
+	background-color: lightgreen;
+}
+
+/* Books Display */
+.books-display {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.book {
+	height: 300px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.display-info {
+	font-size: 1.3rem;
+	width: 100%;
+	min-height: 2rem;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.display-info:nth-of-type(2) {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.display-info:last-of-type {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-read-status {
+	margin: 10px 0;
+	background-color: rgba(255, 0, 0, 0.288);
+}
+
+.btn-read-status.read {
+	background-color: lightgreen;
+}
